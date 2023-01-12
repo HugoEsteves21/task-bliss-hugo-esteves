@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import axios from "axios";
+import '../styles/QuestionScreen.css'
 
 function ListScreen() {
   const [questions, setQuestions] = useState([]);
@@ -30,15 +31,13 @@ function ListScreen() {
   // First wi'll map over the list os questions stored on the "questions" array
   // Then we'll map over the languages available to vote and the vote itself
   return (
-    <div>
-      <h1>hello there!</h1>
-
+    <div className="listings">
       {questions.map((question) => {
         return (
-          <article key={question.id}>
+          <article className="questionsCard" key={question.id}>
             <img src={question.image_url} alt="question" />
             <NavLink to={`/questions/${question.id}`}>
-              <h2>{question.question}</h2>
+              <h3>{question.question}</h3>
             </NavLink>
             {/* <h2>{question.question}</h2> */}
 

@@ -1,0 +1,30 @@
+.listings {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+}
+
+img {
+  width: 250px;
+  border-radius: 10%;
+  margin: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+.questionsCard {
+  margin-bottom: 20px;
+  border-radius: 5px;
+  /*   border: 2px solid black; */
+}
+
+.questionsCard:hover {
+  background-color: #4953ff;
+  color: white;
+}
